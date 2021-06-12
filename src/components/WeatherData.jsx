@@ -8,7 +8,7 @@ export const WeatherData = () => {
   function getWeatherData() {
     axios
       .get(
-        `https://api.openweathermap.org/data/2.5/weather?q=${text}&units=metric&appid=7d20e532e408d693faf9aef7017bd96b`
+        `https://api.openweathermap.org/data/2.5/weather?q=${text}&units=metric&appid={YOUR_API_KEY}`
       )
       .then((res) => {
         setWeather(res.data);
